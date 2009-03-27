@@ -13,6 +13,10 @@
   </issueManagement>
   <mailingLists>
     <mailingList>
+      <name>Jetty Developer Eclipse List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
+    </mailingList>
+    <mailingList>
       <name>Jetty User List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</unsubscribe>
@@ -156,12 +160,11 @@
     <url>http://www.mortbay.com</url>
   </organization>
   <repositories>
-  <!--
     <repository>
-      <id>codehaus.org</id>
+      <id>oss.sonatype.org</id>
       <name>Jetty Snapshot Repository</name>
       <layout>default</layout>
-      <url>http://snapshots.repository.codehaus.org</url>
+      <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -169,8 +172,7 @@
         <enabled>false</enabled>
       </releases>
    </repository>
-   -->
-    <repository>
+   <repository>
       <id>java.net</id>
       <url>http://download.java.net/maven/2</url>
       <layout>default</layout>
@@ -192,14 +194,13 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-  </repositories>
-  <!--
+  </repositories> 
   <pluginRepositories>
     <pluginRepository>
-      <id>codehaus.org</id>
-      <name>Jetty Snapshot Repository</name>
+      <id>oss.sonatype.org</id>
+      <name>Jetty Snapshot Plugin Repository</name>
       <layout>default</layout>
-      <url>http://snapshots.repository.codehaus.org</url>
+      <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -208,15 +209,18 @@
       </releases>
    </pluginRepository>
   </pluginRepositories>
-  -->
-  <!--
   <distributionManagement>
     <repository>
+      <id>oss.sonatype.org</id>
+      <name>Jetty Staging Repository</name>
+      <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
+      <id>oss.sonatype.org</id>
+      <name>Jetty Snapshot Repository</name>
+      <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-  -->
   <scm>
     <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</connection>
     <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</developerConnection>
