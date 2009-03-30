@@ -15,10 +15,26 @@
     <mailingList>
       <name>Jetty Developer Eclipse List</name>
       <archive>http://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty Commits Eclipse List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-commits/maillist.html</archive>
+      <name>Jetty Commit Eclipse List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-commit/maillist.html</archive>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</unsubscribe>
+    </mailingList>
+    <mailingList>
+      <name>Jetty Defects Eclipse List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-defects/maillist.html</archive>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-defects</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-defects</unsubscribe>
+    </mailingList>
+    <mailingList>
+      <name>Jetty Announce Eclipse List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-announce/maillist.html</archive>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</unsubscribe>
     </mailingList>
     <mailingList>
       <name>Jetty User List</name>
