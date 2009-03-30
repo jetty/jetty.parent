@@ -37,25 +37,25 @@
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty User List</name>
+      <name>Jetty6 User List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/user</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty Developer List</name>
+      <name>Jetty6 Developer List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/dev%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/dev%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/dev</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty Announce List</name>
+      <name>Jetty6 Announce List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/announce%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/announce%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/announce</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty Commit List</name>
+      <name>Jetty6 Commit List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/scm%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/scm%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/scm</archive>
