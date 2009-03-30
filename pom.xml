@@ -17,6 +17,10 @@
       <archive>http://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
     </mailingList>
     <mailingList>
+      <name>Jetty Commits Eclipse List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-commits/maillist.html</archive>
+    </mailingList>
+    <mailingList>
       <name>Jetty User List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</unsubscribe>
