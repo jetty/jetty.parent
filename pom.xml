@@ -4,7 +4,7 @@
   <artifactId>jetty-parent</artifactId>
   <packaging>pom</packaging>
   <name>Jetty :: Administrative Parent</name>
-  <version>8</version>
+  <version>9-SNAPSHOT</version>
   <url>http://www.eclipse.org/jetty</url>
   <inceptionYear>1995</inceptionYear>
   <issueManagement>
