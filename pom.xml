@@ -4,7 +4,7 @@
   <artifactId>jetty-parent</artifactId>
   <packaging>pom</packaging>
   <name>Jetty :: Administrative Parent</name>
-  <version>9-SNAPSHOT</version>
+  <version>9</version>
   <url>http://www.eclipse.org/jetty</url>
   <inceptionYear>1995</inceptionYear>
   <issueManagement>
@@ -246,9 +246,9 @@
     </site>
   </distributionManagement>
   <scm>
-    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</connection>
-    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</developerConnection>
-    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</url>
+    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</connection>
+    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</developerConnection>
+    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</url>
   </scm>
   <build>
     <plugins>
