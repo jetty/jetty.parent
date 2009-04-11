@@ -4,7 +4,7 @@
   <artifactId>jetty-parent</artifactId>
   <packaging>pom</packaging>
   <name>Jetty :: Administrative Parent</name>
-  <version>9-SNAPSHOT</version>
+  <version>9</version>
   <url>http://www.eclipse.org/jetty</url>
   <inceptionYear>1995</inceptionYear>
   <issueManagement>
@@ -13,25 +13,25 @@
   </issueManagement>
   <mailingLists>
     <mailingList>
-      <name>Jetty Developer Eclipse List</name>
+      <name>Jetty Developer Mailing List</name>
       <archive>http://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty Commit Eclipse List</name>
+      <name>Jetty Commit Mailing List</name>
       <archive>http://dev.eclipse.org/mhonarc/lists/jetty-commit/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty Defects Eclipse List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-defects/maillist.html</archive>
-      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-defects</subscribe>
-      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-defects</unsubscribe>
+      <name>Jetty Users Mailing List</name>
+      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-users/maillist.html</archive>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-users</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-users</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty Announce Eclipse List</name>
+      <name>Jetty Announce Mailing List</name>
       <archive>http://dev.eclipse.org/mhonarc/lists/jetty-announce/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</unsubscribe>
@@ -240,30 +240,17 @@
       <name>Jetty Snapshot Repository</name>
       <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
     </snapshotRepository>
+    <site>
+      <id>jetty.eclipse.website</id>
+      <url>scp://dev.eclipse.org:/home/www/jetty/${project.version}/</url>
+    </site>
   </distributionManagement>
   <scm>
-    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</connection>
-    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</developerConnection>
-    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</url>
+    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</connection>
+    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</developerConnection>
+    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-9</url>
   </scm>
   <build>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-ssh-external</artifactId>
-        <version>${maven-wagon-version}</version>
-      </extension>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-ssh</artifactId>
-        <version>${maven-wagon-version}</version>
-      </extension>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav</artifactId>
-        <version>${maven-wagon-version}</version>
-      </extension>
-    </extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -318,7 +305,7 @@
           <version>2.0</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.3</version>
         </plugin>
@@ -328,37 +315,42 @@
           <version>2.2</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.5</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jxr-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>2.0-beta-7</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
           <version>1.0</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.3</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>2.0-beta-6</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>2.0.3</version>
         </plugin>
          <plugin>
-          <groupId>org.apache.maven</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.4.2</version>
         </plugin>
@@ -375,14 +367,11 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>1.4.2</version>
+          <version>2.0.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
-  <properties>
-    <maven-wagon-version>1.0-beta-2</maven-wagon-version>
-  </properties>
   <profiles>
     <profile>
       <!-- add in pgp code signing to release profile -->
