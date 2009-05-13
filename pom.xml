@@ -372,6 +372,9 @@
       </plugins>
     </pluginManagement>
   </build>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <profiles>
     <profile>
       <!-- add in pgp code signing to release profile -->
