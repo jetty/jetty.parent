@@ -192,28 +192,6 @@
         <enabled>false</enabled>
       </releases>
    </repository>
-   <repository>
-      <id>java.net</id>
-      <url>http://download.java.net/maven/2</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>m1.java.net</id>
-      <url>http://download.java.net/maven/1</url>
-      <layout>legacy</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
   </repositories> 
   <pluginRepositories>
     <pluginRepository>
