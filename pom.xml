@@ -263,6 +263,7 @@
             <requireJavaVersion>
               <version>[1.5,)</version>
             </requireJavaVersion>
+            <versionRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.VersionRule"/>
           </rules>
         </configuration>         
         <version>1.0-alpha-4</version>
@@ -274,6 +275,13 @@
             </goals>       
           </execution>
         </executions>
+        <dependencies>
+           <dependency>
+             <groupId>org.eclipse.jetty.toolchain</groupId>
+             <artifactId>jetty-enforcer-rules</artifactId>
+             <version>1.0</version>
+           </dependency>
+        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
