@@ -164,6 +164,13 @@
       <organization>Webtide</organization>
       <organizationUrl>http://www.webtide.com</organizationUrl>
     </developer>
+    <developer>
+      <id>jerdfelt</id>
+      <name>Joakim Erdfelt</name>
+      <organization>Webtide</organization>
+      <organizationUrl>http://www.webtide.com</organizationUrl>
+      <timezone>-7</timezone>
+    </developer>
   </developers>
   <licenses>
     <license>
