@@ -171,6 +171,13 @@
       <organizationUrl>http://www.webtide.com</organizationUrl>
       <timezone>-7</timezone>
     </developer>
+    <developer>
+      <id>hmalphett</id>
+      <name>Hugues Malphettes</name>
+      <organization>Intalio.com</organization>
+      <organizationUrl>http://www.intalio.com</organizationUrl>
+      <timezone>-9</timezone>
+    </developer>
   </developers>
   <licenses>
     <license>
