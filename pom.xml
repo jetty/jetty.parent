@@ -4,7 +4,7 @@
   <artifactId>jetty-parent</artifactId>
   <packaging>pom</packaging>
   <name>Jetty :: Administrative Parent</name>
-  <version>12-SNAPSHOT</version>
+  <version>12</version>
   <url>http://www.eclipse.org/jetty</url>
   <inceptionYear>1995</inceptionYear>
   <issueManagement>
@@ -238,9 +238,9 @@
     </site>
   </distributionManagement>
   <scm>
-    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</connection>
-    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</developerConnection>
-    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/trunk</url>
+    <connection>scm:svn:http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-12</connection>
+    <developerConnection>scm:svn:svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-12</developerConnection>
+    <url>http://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags/jetty-parent-12</url>
   </scm>
   <build>
     <plugins>
@@ -377,7 +377,32 @@
   </properties>
   <profiles>
     <profile>
-      <!-- add in pgp code signing to release profile -->
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
       <id>eclipse-release</id>
       <build>
         <plugins>
