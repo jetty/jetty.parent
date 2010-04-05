@@ -194,6 +194,7 @@
     <name>Mort Bay Consulting</name>
     <url>http://www.mortbay.com</url>
   </organization>
+  <!--
   <repositories>
     <repository>
       <id>oss.sonatype.org</id>
@@ -222,6 +223,7 @@
       </releases>
    </pluginRepository>
   </pluginRepositories>
+  -->
   <distributionManagement>
     <repository>
       <id>oss.sonatype.org</id>
@@ -378,32 +380,6 @@
   </properties>
   <profiles>
     <profile>
-      <id>release-sign-artifacts</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
       <id>eclipse-release</id>
       <build>
         <plugins>
@@ -435,6 +411,19 @@
                 <id>attach-javadocs</id>
                 <goals>
                   <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
                 </goals>
               </execution>
             </executions>
