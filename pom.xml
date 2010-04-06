@@ -179,6 +179,14 @@
       <organizationUrl>http://www.intalio.com</organizationUrl>
       <timezone>-9</timezone>
     </developer>
+    <developer>
+      <id>mgorovoy</id>
+      <name>Michael Gorovoy</name>
+      <email>michael@webtide.com</email>
+      <organization>Intalio Inc.</organization>
+      <organizationUrl>http://www.intalio.com</organizationUrl>
+      <timezone>-5</timezone>
+    </developer>
   </developers>
   <licenses>
     <license>
