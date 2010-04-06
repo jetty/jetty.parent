@@ -177,7 +177,7 @@
       <name>Hugues Malphettes</name>
       <organization>Intalio.com</organization>
       <organizationUrl>http://www.intalio.com</organizationUrl>
-      <timezone>-9</timezone>
+      <timezone>-8</timezone>
     </developer>
     <developer>
       <id>mgorovoy</id>
