@@ -246,7 +246,7 @@
     </snapshotRepository>
     <site>
       <id>jetty.eclipse.website</id>
-      <url>scp://dev.eclipse.org:/home/www/jetty/${project.version}/</url>
+      <url>scp://dev.eclipse.org:/home/data/httpd/download.eclipse.org/jetty/${project.version}/</url>
     </site>
   </distributionManagement>
   <scm>
@@ -304,7 +304,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.5</version>
+          <version>2.7</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -390,7 +390,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
+            <executions>+
               <execution>
                 <id>attach-javadocs</id>
                 <goals>
