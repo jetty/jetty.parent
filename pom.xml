@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.eclipse.jetty</groupId>
   <artifactId>jetty-parent</artifactId>
@@ -203,36 +205,14 @@
     <name>Mort Bay Consulting</name>
     <url>http://www.mortbay.com</url>
   </organization>
-  <!--
-  <repositories>
-    <repository>
-      <id>oss.sonatype.org</id>
-      <name>Jetty Snapshot Repository</name>
-      <layout>default</layout>
-      <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-   </repository>
-  </repositories> 
-  <pluginRepositories>
-    <pluginRepository>
-      <id>oss.sonatype.org</id>
-      <name>Jetty Snapshot Plugin Repository</name>
-      <layout>default</layout>
-      <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-   </pluginRepository>
-  </pluginRepositories>
-  -->
+  <!-- <repositories> <repository> <id>oss.sonatype.org</id> <name>Jetty 
+    Snapshot Repository</name> <layout>default</layout> <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url> 
+    <snapshots> <enabled>true</enabled> </snapshots> <releases> <enabled>false</enabled> 
+    </releases> </repository> </repositories> <pluginRepositories> <pluginRepository> 
+    <id>oss.sonatype.org</id> <name>Jetty Snapshot Plugin Repository</name> <layout>default</layout> 
+    <url>http://oss.sonatype.org/content/repositories/jetty-snapshots/</url> 
+    <snapshots> <enabled>true</enabled> </snapshots> <releases> <enabled>false</enabled> 
+    </releases> </pluginRepository> </pluginRepositories> -->
   <distributionManagement>
     <repository>
       <id>oss.sonatype.org</id>
@@ -260,7 +240,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
-          <!--tagBase>svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags</tagBase-->
+          <!--tagBase>svn+ssh://dev.eclipse.org/svnroot/rt/org.eclipse.jetty/jetty-parent/tags</tagBase -->
           <useReleaseProfile>false</useReleaseProfile>
           <goals>deploy</goals>
           <arguments>-Peclipse-release</arguments>
@@ -331,7 +311,7 @@
           <artifactId>maven-remote-resources-plugin</artifactId>
           <version>1.2</version>
         </plugin>
-         <plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
           <version>2.5</version>
@@ -351,7 +331,7 @@
           <artifactId>maven-source-plugin</artifactId>
           <version>2.1.2</version>
         </plugin>
-         <plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.8.1</version>
@@ -361,7 +341,7 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>2.1.1</version>
         </plugin>
-         <plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>1.5</version>
@@ -385,6 +365,76 @@
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
           <version>2.3.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                <pluginExecutionFilter>
+                    <groupId>org.eclipse.jetty.toolchain</groupId>
+                    <artifactId>jetty-version-maven-plugin</artifactId>
+                    <versionRange>[1.0.3,)</versionRange>
+                    <goals>
+                      <goal>attach-version-text</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <versionRange>[2.2,)</versionRange>
+                    <goals>
+                      <goal>unpack</goal>
+                      <goal>copy-dependencies</goal>
+                      <goal>copy</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.ops4j.pax.exam</groupId>
+                    <artifactId>maven-paxexam-plugin</artifactId>
+                    <versionRange>
+                      [1.2.0,)
+                    </versionRange>
+                    <goals>
+                      <goal>
+                        generate-depends-file
+                      </goal>
+                      <goal>generate-config</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <versionRange>[1.4,)</versionRange>
+                    <goals>
+                      <goal>run</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -417,7 +467,7 @@
               </execution>
             </executions>
           </plugin>
-         <plugin>
+          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <executions>
