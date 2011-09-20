@@ -390,7 +390,7 @@
                   <pluginExecutionFilter>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <versionRange>[2.2,)</versionRange>
+                    <versionRange>[2.1,)</versionRange>
                     <goals>
                       <goal>unpack</goal>
                       <goal>unpack-dependencies</goal>
@@ -454,6 +454,23 @@
                     <goals>
                       <goal>xdoc</goal>
                       <goal>helpmojo</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>native-maven-plugin</artifactId>
+                    <versionRange>[1.0-alpha-7,)</versionRange>
+                    <goals>
+                      <goal>initialize</goal>
+                      <goal>javah</goal>
+                      <goal>compile</goal>
+                      <goal>unzipinc</goal>
+                      <goal>link</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
