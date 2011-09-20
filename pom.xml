@@ -103,46 +103,14 @@
       <organizationUrl>http://www.mortbay.com</organizationUrl>
     </developer>
     <developer>
-      <id>jules</id>
-      <name>Jules Gosnell</name>
-      <email>jules@apache.org</email>
-      <organization />
-    </developer>
-    <developer>
-      <id>jstrachan</id>
-      <name>James Strachan</name>
-      <email>jstrachan@apache.org</email>
-      <organization>Logic Blaze</organization>
-      <organizationUrl>http://www.logicblaze.com</organizationUrl>
-    </developer>
-    <developer>
       <id>sbordet</id>
       <name>Simone Bordet</name>
       <email>simone.bordet@gmail.com</email>
     </developer>
     <developer>
-      <id>tvernum</id>
-      <name>Tim Vernum</name>
-      <email>tim@adjective.org</email>
-      <organization />
-    </developer>
-    <developer>
-      <id>ngonzalez</id>
-      <name>Nik Gonzalez</name>
-      <email>ngonzalez@exist.com</email>
-      <organization />
-    </developer>
-    <developer>
-      <id>jfarcand</id>
-      <name>Jeanfrancois Arcand</name>
-      <email>jfarcand@apache.org</email>
-      <organization>Sun Microsystems</organization>
-      <organizationUrl>http://www.sun.com</organizationUrl>
-    </developer>
-    <developer>
       <id>jesse</id>
       <name>Jesse McConnell</name>
-      <email>jesse@webtide.org</email>
+      <email>jesse.mcconnell@gmail.com</email>
       <organization>Webtide, LLC</organization>
       <organizationUrl>http://www.webtide.com</organizationUrl>
       <timezone>-6</timezone>
@@ -152,20 +120,6 @@
       <name>David Jencks</name>
       <email>david_jencks@yahoo.com</email>
       <organization>IBM</organization>
-    </developer>
-    <developer>
-      <id>dyu</id>
-      <name>David Yu</name>
-      <email>david.yu.ftw@gmail.com</email>
-      <organization>Webtide</organization>
-      <organizationUrl>http://www.webtide.com</organizationUrl>
-    </developer>
-    <developer>
-      <id>ayao</id>
-      <name>Athena Yao</name>
-      <email>yao.athena@gmail.com</email>
-      <organization>Webtide</organization>
-      <organizationUrl>http://www.webtide.com</organizationUrl>
     </developer>
     <developer>
       <id>jerdfelt</id>
@@ -185,12 +139,48 @@
     <developer>
       <id>mgorovoy</id>
       <name>Michael Gorovoy</name>
-      <email>michael@webtide.com</email>
-      <organization>Intalio Inc.</organization>
-      <organizationUrl>http://www.intalio.com</organizationUrl>
+      <email>mgorovoy@gmail.com</email>
       <timezone>-5</timezone>
     </developer>
   </developers>
+  <contributors>
+    <contributor>
+      <name>Athena Yao</name>
+      <email>yao.athena@gmail.com</email>
+      <organization>Webtide</organization>
+      <organizationUrl>http://www.webtide.com</organizationUrl>
+    </contributor>
+    <contributor>
+      <name>David Yu</name>
+      <email>david.yu.ftw@gmail.com</email>
+      <organization>Webtide</organization>
+      <organizationUrl>http://www.webtide.com</organizationUrl>
+    </contributor>
+    <contributor>
+      <name>Nik Gonzalez</name>
+      <email>ngonzalez@exist.com</email>
+    </contributor>
+    <contributor>
+      <name>James Strachan</name>
+      <email>jstrachan@apache.org</email>
+      <organization>Logic Blaze</organization>
+      <organizationUrl>http://www.logicblaze.com</organizationUrl>
+    </contributor>
+    <contributor>
+      <name>Tim Vernum</name>
+      <email>tim@adjective.org</email>
+    </contributor>
+    <contributor>
+      <name>Jeanfrancois Arcand</name>
+      <email>jfarcand@apache.org</email>
+      <organization>Sun Microsystems</organization>
+      <organizationUrl>http://www.sun.com</organizationUrl>
+    </contributor>
+    <contributor>
+      <name>Jules Gosnell</name>
+      <email>jules@apache.org</email>
+    </contributor>
+  </contributors>
   <licenses>
     <license>
       <name>Apache Software License - Version 2.0</name>
