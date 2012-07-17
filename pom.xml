@@ -140,6 +140,14 @@
       <email>mgorovoy@gmail.com</email>
       <timezone>-5</timezone>
     </developer>
+    <developer>
+      <id>tbecker</id>
+      <name>Thomas Becker</name>
+      <email>thomas.becker00@googlemail.com</email>
+      <organization>Webtide, LLC</organization>
+      <organizationUrl>http://www.webtide.com</organizationUrl>
+      <timezone>1</timezone>
+    </developer>
   </developers>
   <contributors>
     <contributor>
