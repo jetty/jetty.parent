@@ -482,7 +482,7 @@
                   <pluginExecutionFilter>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <versionRange>[2.7.1,)</versionRange>
+                    <versionRange>[2.5,)</versionRange>
                     <goals>
                       <goal>check</goal>
                     </goals>
