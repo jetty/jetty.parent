@@ -38,25 +38,25 @@
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</unsubscribe>
     </mailingList>
     <mailingList>
-      <name>Jetty @ codehaus User List</name>
+      <name>Defunct - Jetty @ codehaus User List -</name>
       <subscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/user%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/user</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty @ codehaus Developer List</name>
+      <name>Defunct - Jetty @ codehaus Developer List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/dev%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/dev%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/dev</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty @ codehaus Announce List</name>
+      <name>Defunct - Jetty @ codehaus Announce List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/announce%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/announce%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/announce</archive>
     </mailingList>
     <mailingList>
-      <name>Jetty @ codehaus Commit List</name>
+      <name>Defunct - Jetty @ codehaus Commit List</name>
       <subscribe>http://xircles.codehaus.org/manage_email/scm%40jetty.codehaus.org</subscribe>
       <unsubscribe>http://xircles.codehaus.org/manage_email/scm%40jetty.codehaus.org</unsubscribe>
       <archive>http://archive.jetty.codehaus.org/scm</archive>
@@ -91,6 +91,7 @@
       <url>http://www.mortbay.com/mortbay/people/gregw</url>
       <organization>Mort Bay Consulting</organization>
       <organizationUrl>http://www.mortbay.com</organizationUrl>
+      <timezone>10</timezone>
     </developer>
     <developer>
       <id>janb</id>
@@ -99,11 +100,13 @@
       <url>http://www.mortbay.com/people/janb</url>
       <organization>Mort Bay Consulting</organization>
       <organizationUrl>http://www.mortbay.com</organizationUrl>
+      <timezone>10</timezone>
     </developer>
     <developer>
       <id>sbordet</id>
       <name>Simone Bordet</name>
       <email>simone.bordet@gmail.com</email>
+      <timezone>1</timezone>
     </developer>
     <developer>
       <id>jesse</id>
@@ -118,6 +121,7 @@
       <name>David Jencks</name>
       <email>david_jencks@yahoo.com</email>
       <organization>IBM</organization>
+      <timezone>-8</timezone>
     </developer>
     <developer>
       <id>jerdfelt</id>
@@ -128,39 +132,28 @@
       <timezone>-7</timezone>
     </developer>
     <developer>
-      <id>hmalphett</id>
-      <name>Hugues Malphettes</name>
-      <organization>Intalio.com</organization>
-      <organizationUrl>http://www.intalio.com</organizationUrl>
-      <timezone>-8</timezone>
-    </developer>
-    <developer>
-      <id>mgorovoy</id>
-      <name>Michael Gorovoy</name>
-      <email>mgorovoy@gmail.com</email>
-      <timezone>-5</timezone>
-    </developer>
-    <developer>
       <id>tbecker</id>
       <name>Thomas Becker</name>
       <email>thomas.becker00@googlemail.com</email>
-      <organization>Webtide, LLC</organization>
-      <organizationUrl>http://www.webtide.com</organizationUrl>
       <timezone>1</timezone>
     </developer>
   </developers>
   <contributors>
     <contributor>
+      <name>Hugues Malphettes</name>
+      <email>hlmalphettes@gmail.com</email>
+    </contributor>
+     <contributor>
+      <name>Michael Gorovoy</name>
+      <email>mgorovoy@gmail.com</email>
+    </contributor>
+    <contributor>
       <name>Athena Yao</name>
       <email>yao.athena@gmail.com</email>
-      <organization>Webtide</organization>
-      <organizationUrl>http://www.webtide.com</organizationUrl>
     </contributor>
     <contributor>
       <name>David Yu</name>
       <email>david.yu.ftw@gmail.com</email>
-      <organization>Webtide</organization>
-      <organizationUrl>http://www.webtide.com</organizationUrl>
     </contributor>
     <contributor>
       <name>Nik Gonzalez</name>
@@ -198,8 +191,8 @@
     </license>
   </licenses>
   <organization>
-    <name>Mort Bay Consulting</name>
-    <url>http://www.mortbay.com</url>
+    <name>Webtide</name>
+    <url>http://webtide.com</url>
   </organization>
   <distributionManagement>
     <repository>
