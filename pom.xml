@@ -432,6 +432,8 @@
                     <artifactId>maven-plugin-plugin</artifactId>
                     <versionRange>[2.5,)</versionRange>
                     <goals>
+                      <goal>default-descriptor</goal>
+                      <goal>descriptor</goal>
                       <goal>xdoc</goal>
                       <goal>helpmojo</goal>
                     </goals>
