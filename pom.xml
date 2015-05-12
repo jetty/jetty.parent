@@ -124,11 +124,11 @@
       <timezone>-8</timezone>
     </developer>
     <developer>
-      <id>jerdfelt</id>
+      <id>joakime</id>
       <name>Joakim Erdfelt</name>
-      <email>joakim@intalio.com</email>
-      <organization>Intalio Inc.</organization>
-      <organizationUrl>http://www.intalio.com</organizationUrl>
+      <email>joakim.erdfelt@gmail.com</email>
+      <organization>Webtide, LLC</organization>
+      <organizationUrl>http://www.webtide.com</organizationUrl>
       <timezone>-7</timezone>
     </developer>
     <developer>
