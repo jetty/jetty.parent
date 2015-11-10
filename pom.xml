@@ -125,6 +125,11 @@
       <id>joakime</id>
       <name>Joakim Erdfelt</name>
       <email>joakim.erdfelt@gmail.com</email>
+      <!-- other email addresses
+           joakim@erdfelt.com
+           joakim@intalio.com
+           joakim@webtide.com
+        -->
       <organization>Webtide, LLC</organization>
       <organizationUrl>http://www.webtide.com</organizationUrl>
       <timezone>-7</timezone>
