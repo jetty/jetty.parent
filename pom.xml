@@ -6,9 +6,9 @@
   <name>Jetty :: Administrative Parent</name>
   <description>Administrative parent pom for Jetty modules</description>
   <version>26-SNAPSHOT</version>
-  <url>http://www.eclipse.org/jetty</url>
+  <url>https://eclipse.org/jetty</url>
   <inceptionYear>1995</inceptionYear>
-    
+
   <issueManagement>
     <system>github</system>
     <url>https://github.com/eclipse/jetty.project/issues</url>
@@ -17,25 +17,25 @@
   <mailingLists>
     <mailingList>
       <name>Jetty Developer Mailing List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
+      <archive>https://dev.eclipse.org/mhonarc/lists/jetty-dev/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-dev</unsubscribe>
     </mailingList>
     <mailingList>
       <name>Jetty Commit Mailing List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-commit/maillist.html</archive>
+      <archive>https://dev.eclipse.org/mhonarc/lists/jetty-commit/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-commit</unsubscribe>
     </mailingList>
     <mailingList>
       <name>Jetty Users Mailing List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-users/maillist.html</archive>
+      <archive>https://dev.eclipse.org/mhonarc/lists/jetty-users/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-users</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-users</unsubscribe>
     </mailingList>
     <mailingList>
       <name>Jetty Announce Mailing List</name>
-      <archive>http://dev.eclipse.org/mhonarc/lists/jetty-announce/maillist.html</archive>
+      <archive>https://dev.eclipse.org/mhonarc/lists/jetty-announce/maillist.html</archive>
       <subscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</subscribe>
       <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jetty-announce</unsubscribe>
     </mailingList>
