@@ -172,7 +172,7 @@
     <maven.shade.plugin.version>3.5.1</maven.shade.plugin.version>
     <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
     <maven.spotless.plugin.version>2.39.0</maven.spotless.plugin.version>
-    <maven.surefire.argLine></maven.surefire.argLine>
+    <maven.surefire.argLine />
     <maven.surefire.plugin.version>3.2.1</maven.surefire.plugin.version>
     <maven.version.minimum>3.9</maven.version.minimum>
     <mavenPluginToolsVersion>3.5.2</mavenPluginToolsVersion>
