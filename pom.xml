@@ -166,7 +166,6 @@
     <maven.release.plugin.goals>deploy</maven.release.plugin.goals>
     <maven.release.plugin.preparationGoals>clean install</maven.release.plugin.preparationGoals>
     <maven.release.plugin.version>3.0.1</maven.release.plugin.version>
-    <maven.remote.resources.bundle>org.eclipse.jetty.toolchain:jetty-artifact-remote-resources:1.2</maven.remote.resources.bundle>
     <maven.remote.resources.plugin.version>3.1.0</maven.remote.resources.plugin.version>
     <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>
     <maven.shade.plugin.version>3.5.1</maven.shade.plugin.version>
@@ -420,23 +419,6 @@
                 </requireJavaVersion>
                 <requireUpperBoundDeps />
               </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-remote-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>process</goal>
-            </goals>
-            <phase>generate-resources</phase>
-            <configuration>
-              <resourceBundles>
-                <resourceBundle>${maven.remote.resources.bundle}</resourceBundle>
-              </resourceBundles>
             </configuration>
           </execution>
         </executions>
