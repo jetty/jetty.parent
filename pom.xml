@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.eclipse.jetty</groupId>
   <artifactId>jetty-parent</artifactId>
-  <version>26-SNAPSHOT</version>
+  <version>26</version>
   <packaging>pom</packaging>
   <name>Jetty :: Parent</name>
   <description>The Eclipse Jetty Parent</description>
@@ -117,7 +117,7 @@
   <scm>
     <connection>scm:git:https://github.com/jetty/${jetty.git.repo}.git</connection>
     <developerConnection>scm:git:git@github.com:jetty/${jetty.git.repo}.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>jetty-parent-26</tag>
     <url>https://github.com/jetty/${jetty.git.repo}</url>
   </scm>
 
