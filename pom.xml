@@ -11,8 +11,8 @@
   <inceptionYear>1995</inceptionYear>
 
   <organization>
-    <name>Mort Bay Consulting</name>
-    <url>http://www.mortbay.com</url>
+    <name>Eclipse Jetty</name>
+    <url>https://eclipse.dev/jetty/</url>
   </organization>
 
   <licenses>
