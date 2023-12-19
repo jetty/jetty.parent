@@ -30,19 +30,13 @@
     <developer>
       <id>gregw</id>
       <name>Greg Wilkins</name>
-      <email>gregw@apache.org</email>
-      <url>http://www.mortbay.com/mortbay/people/gregw</url>
       <organization>Mort Bay Consulting</organization>
-      <organizationUrl>http://www.mortbay.com</organizationUrl>
       <timezone>Australia/Sydney</timezone>
     </developer>
     <developer>
       <id>janb</id>
       <name>Jan Bartel</name>
-      <email>janb@apache.org</email>
-      <url>http://www.mortbay.com/people/janb</url>
       <organization>Mort Bay Consulting</organization>
-      <organizationUrl>http://www.mortbay.com</organizationUrl>
       <timezone>Australia/Sydney</timezone>
     </developer>
     <developer>
@@ -84,6 +78,12 @@
       <organization>Webtide, LLC</organization>
       <organizationUrl>https://webtide.com</organizationUrl>
       <timezone>America/Chicago</timezone>
+    </developer>
+    <developer>
+      <id>lachlan-roberts</id>
+      <name>Lachlan Roberts</name>
+      <organization>Mort Bay Consulting</organization>
+      <timezone>Australia/Sydney</timezone>
     </developer>
   </developers>
 
