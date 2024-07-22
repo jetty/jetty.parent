@@ -160,7 +160,7 @@
     <maven.install.plugin.version>3.1.2</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.7.0</maven.invoker.plugin.version>
     <maven.jar.plugin.version>3.4.2</maven.jar.plugin.version>
-    <maven.javadoc.plugin.version>3.7.0</maven.javadoc.plugin.version>
+    <maven.javadoc.plugin.version>3.8.0</maven.javadoc.plugin.version>
     <maven.license.plugin.version>4.5</maven.license.plugin.version>
     <maven.release.plugin.arguments />
     <maven.release.plugin.goals>deploy</maven.release.plugin.goals>
